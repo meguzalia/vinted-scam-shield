@@ -1,88 +1,99 @@
-# 🛡️ Vinted Scam Shield v3.0
+# 🛡️ Vinted Scam Shield
 
-**A friendly tap on the shoulder before you get scammed.**
+**A free Chrome extension for Vinted shoppers — especially beginners — who want a safety net while browsing.**
 
----
-
-## What changed in v3.0
-
-The extension was rebuilt around one insight: **casual shoppers don't want dashboards or risk scores — they want a simple, clear warning before they waste money.**
-
-### Removed
-- Stats dashboard (items checked, money saved) — added friction, no real value
-- Complex risk score bar — overwhelming for casual users
-
-### Added
-- Clean, friendly warning banner — appears only when something's actually wrong
-- **AI-powered analysis** via Claude API — catches subtle scams that keyword rules miss
-- Smarter language: "This listing has a few unusual patterns" not "SCAM DETECTED"
+Built by a Vinted seller and second-hand platform user who got tired of seeing people get burned.
 
 ---
 
-## How it works
+## ⚠️ Important disclaimer
 
-When you open a Vinted item page:
-
-1. **Instant rule-based checks** run immediately (no API call needed):
-   - Fake "vintage" / Y2K fast fashion
-   - Shein/Temu reseller signals
-   - Counterfeit luxury items (Rolex, Birkin, etc.)
-   - Zero-review sellers with expensive items
-
-2. **AI analysis** runs in parallel (requires API key):
-   - Sends title, brand, price, description snippet to Claude
-   - Detects subtle patterns: copy-paste text, vague descriptions, translated phrasing, suspicious pricing for the brand
-   - Returns a plain-language warning if anything's off
-
-3. If a flag is found → a small, friendly banner appears in the top-right corner with:
-   - What the problem is (one sentence)
-   - What to do about it (one concrete tip)
-   - A "Check Images" button that opens Google Lens
-
-If nothing's wrong → no banner, no noise. The extension stays invisible.
+This extension is a **helpful guide only, not a guarantee**. Treat every warning as advice, not a verdict — always use your own judgment before buying. It has only been tested on **clothing and accessories**. It will not catch every scam, and may occasionally flag legitimate sellers.
 
 ---
 
-## Setup
+## What it does
 
-### Basic (no AI, rule-based only)
-1. Download all files to a folder
-2. Go to `chrome://extensions/`
-3. Enable "Developer mode"
-4. Click "Load unpacked" → select the folder
-5. Done
+**On every Vinted item page:**
+- A small "Before you buy" checklist appears with 5 things to verify
+- Google Lens reverse image search built in — one click to check if photos are stolen
+- Automatic warnings when obvious red flags are detected
 
-### With AI analysis
-1. Get an Anthropic API key at [console.anthropic.com](https://console.anthropic.com)
-2. Open `content.js`
-3. Replace `'YOUR_API_KEY_HERE'` with your key
-4. Load the extension as above
+**Automatic detection covers:**
+- Shein / Temu resellers (frequent uploads + no real brand + low reviews)
+- AI-generated descriptions (marketing language + hashtag spam)
+- Fake "vintage" / Y2K fast fashion
+- New sellers (under 10 reviews)
+- Dropshipping keyword signals
+
+**What it does NOT do:**
+- Catch experienced scammers with polished listings and many reviews
+- Work reliably on electronics, home, or non-clothing categories
+- Replace your own judgment
+
+---
+
+## Installation
+
+This extension is not yet on the Chrome Web Store. Install manually in 5 steps:
+
+1. Download this repository — click **Code → Download ZIP** and unzip the folder
+2. Open Chrome and go to `chrome://extensions/`
+3. Enable **Developer mode** (toggle in the top right)
+4. Click **Load unpacked**
+5. Select the unzipped `vinted-scam-shield` folder
+
+Done. Open any Vinted item page and the extension activates automatically.
+
+---
+
+## Screenshots
+
+*New seller warning — pink dress (2 reviews):*
+![New seller warning](screenshot-new-seller-dress2.png)
+
+*New seller warning — Dior bag (8 reviews):*
+![New seller Dior warning](screenshot-new-seller-dior3.png)
+
+*AI-generated description detected — 16 hashtags:*
+![AI description warning](screenshot-ai-description1.png)
+
+---
+
+## Supported Vinted markets
+
+vinted.at · vinted.de · vinted.fr · vinted.co.uk · vinted.it · vinted.es · vinted.nl · vinted.be · vinted.pl · vinted.com
 
 ---
 
 ## Privacy
 
-- No data ever leaves your device (except the listing text sent to Anthropic's API if you set a key — only when you view an item with suspicious signals)
-- No tracking, no analytics, no servers
-- Open source — read the code
-
----
-
-## Known limitations
-
-- Only works on individual item pages (not search results)
-- AI analysis requires an Anthropic API key
-- Some scams won't be caught — always use your judgment
-- Google Lens requires a manual click
+- ✅ No data collected
+- ✅ No external servers
+- ✅ Everything runs locally in your browser
+- ✅ No account required
 
 ---
 
 ## Roadmap
 
-- Detect suspicious patterns in seller profile bios
-- Multi-language support improvements (FR, DE, PL)
-- Firefox support
+- [ ] AI-powered analysis (coming soon — paid tier)
+- [ ] Chrome Web Store listing
+- [ ] Firefox support
+- [ ] Seller pattern detection improvements
 
 ---
 
-**Stay safe shopping! 🛡️**
+## Contributing
+
+Found a scam pattern that isn't detected? Open an issue with the listing URL and what made it suspicious. Every real example improves detection for everyone.
+
+---
+
+## License
+
+MIT — free to use, modify, and distribute.
+
+---
+
+*Built with insights from the r/vinted community. Thank you to everyone who shared their experiences.*

@@ -37,13 +37,17 @@ This extension is a **helpful guide only, not a guarantee**. Treat every warning
 
 This extension is not yet on the Chrome Web Store. Install manually in 5 steps:
 
-1. Download this repository — click **Code → Download ZIP** and unzip the folder
-2. Open Chrome and go to `chrome://extensions/`
-3. Enable **Developer mode** (toggle in the top right)
-4. Click **Load unpacked**
-5. Select the unzipped `vinted-scam-shield` folder
+1. Download this repository — click the green **Code** button → **Download ZIP**
+2. **Unzip the downloaded file** — right click it → Extract All (Windows) or double click (Mac)
+3. Open Chrome and go to `chrome://extensions/`
+4. Enable **Developer mode** (toggle in the top right)
+5. Click **Load unpacked**
+6. Select the unzipped folder — if there is a subfolder inside (e.g. `vinted-scam-shield-main`), select that inner folder
+7. Done ✅
 
-Done. Open any Vinted item page and the extension activates automatically.
+Open any Vinted item page and the extension activates automatically.
+
+> **Note:** Chrome may show a warning about developer mode extensions — this is normal for any extension not yet on the Chrome Web Store. You can safely dismiss it.
 
 ---
 

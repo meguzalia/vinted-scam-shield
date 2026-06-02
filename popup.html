@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vinted Scam Shield</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="hero">
+      <div class="shield">🛡️</div>
+      <h1>Scam Shield</h1>
+      <p class="sub">Protecting you while you shop Vinted</p>
+    </div>
+
+    <div class="status" id="status">
+      <span class="dot"></span>
+      <span>Active on this tab</span>
+    </div>
+
+    <div class="checks">
+      <div class="check-row">
+        <span class="check-icon">🛡️</span>
+        <span>Before-you-buy checklist on every listing</span>
+      </div>
+      <div class="check-row">
+        <span class="check-icon">🔍</span>
+        <span>Google Lens image check built in</span>
+      </div>
+      <div class="check-row">
+        <span class="check-icon">💸</span>
+        <span>Counterfeit luxury auto-detection</span>
+      </div>
+      <div class="check-row">
+        <span class="check-icon">📦</span>
+        <span>Shein &amp; Temu reseller warnings</span>
+      </div>
+      <div class="check-row">
+        <span class="check-icon">🤖</span>
+        <span>AI analysis — coming soon</span>
+      </div>
+    </div>
+
+    <!-- Lens button: only shown on item pages via popup.js -->
+    <div id="lens-section" style="display:none; padding: 0 0 12px;">
+      <button id="lens-btn" style="
+        width:100%; padding:10px; background:none;
+        border:1.5px solid #1a73e8; border-radius:9px;
+        font-size:13px; font-weight:600; color:#1a73e8;
+        cursor:pointer; font-family:inherit;
+      ">🔍 Check this listing's images on Google</button>
+    </div>
+
+    <div class="tip-box">
+      <strong>Tip:</strong> Open any Vinted item page and a warning will appear automatically if something looks off.
+    </div>
+
+    <div class="footer">v3.0 · Free Forever · No data collected</div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

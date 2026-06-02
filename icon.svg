@@ -1,0 +1,20 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="64" cy="64" r="64" fill="url(#gradient)"/>
+  
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#09B1BA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#008E96;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Shield Shape -->
+  <path d="M 64 20 L 90 32 L 90 64 C 90 85 77 100 64 108 C 51 100 38 85 38 64 L 38 32 Z" 
+        fill="white" opacity="0.95"/>
+  
+  <!-- Checkmark inside shield -->
+  <path d="M 52 64 L 60 72 L 76 52" 
+        stroke="#09B1BA" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

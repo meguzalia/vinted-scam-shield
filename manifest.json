@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "Vinted Scam Shield",
+  "version": "3.0.0",
+  "description": "Your friendly shopping assistant — spots fake vintage, Shein resellers, and scams before you buy.",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": [
+    "*://*.vinted.com/*",
+    "*://*.vinted.de/*",
+    "*://*.vinted.at/*",
+    "*://*.vinted.fr/*",
+    "*://*.vinted.co.uk/*",
+    "*://*.vinted.it/*",
+    "*://*.vinted.es/*",
+    "*://*.vinted.nl/*",
+    "*://*.vinted.be/*",
+    "*://*.vinted.pl/*"
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "default_title": "Vinted Scam Shield"
+  },
+  "content_scripts": [{
+    "matches": [
+      "*://*.vinted.com/*",
+      "*://*.vinted.de/*",
+      "*://*.vinted.at/*",
+      "*://*.vinted.fr/*",
+      "*://*.vinted.co.uk/*",
+      "*://*.vinted.it/*",
+      "*://*.vinted.es/*",
+      "*://*.vinted.nl/*",
+      "*://*.vinted.be/*",
+      "*://*.vinted.pl/*"
+    ],
+    "js": ["content.js"]
+  }],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

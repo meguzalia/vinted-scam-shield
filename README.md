@@ -5,7 +5,7 @@
 Built by a Vinted seller and second-hand platform user who got tired of seeing people get burned.
 
 ## 🛡️ Now available on the Chrome Web Store — one click install!
-[Install Vinted Scam Shield](https://chromewebstore.google.com/detail/vinted-scam-shield/ffdkgcechcedjmnbiljfffjoeikpfffk)
+[![Install on Chrome](https://img.shields.io/badge/Chrome%20Web%20Store-Install%20Free-09B1BA?style=for-the-badge&logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/vinted-scam-shield/ffdkgcechcedjmnbiljfffjoeikpfffk)
 
 ---
 

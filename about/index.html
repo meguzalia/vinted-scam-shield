@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Story | Vinted Scam Shield</title>
+  <meta name="description" content="Why Vinted Scam Shield exists: Vinted is growing fast, scams are growing with it, and existing protection often comes too late. Built by one person, transparently.">
+  <link rel="canonical" href="https://vintedscamshield.com/about/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0f1117;
+      --bg2: #161a24;
+      --bg3: #1e2330;
+      --teal: #00c9b1;
+      --teal-dim: rgba(0,201,177,0.12);
+      --teal-border: rgba(0,201,177,0.25);
+      --text: #e8eaf0;
+      --text-muted: #8a90a0;
+      --text-dim: #b0b8cc;
+      --yellow: #fbbf24;
+      --yellow-dim: rgba(251,191,36,0.1);
+      --green: #4ade80;
+      --green-dim: rgba(74,222,128,0.1);
+      --max-w: 720px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 17px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 32px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      position: sticky;
+      top: 0;
+      background: rgba(15,17,23,0.92);
+      backdrop-filter: blur(12px);
+      z-index: 100;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+    }
+    .nav-logo-icon {
+      width: 28px; height: 28px;
+      background: var(--teal);
+      border-radius: 7px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px;
+    }
+    .nav-cta {
+      background: var(--teal);
+      color: #0f1117;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      padding: 8px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      letter-spacing: 0.01em;
+      transition: opacity 0.2s;
+    }
+    .nav-cta:hover { opacity: 0.85; }
+
+    .hero {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 64px 24px 48px;
+    }
+    .tag {
+      display: inline-block;
+      background: var(--teal-dim);
+      color: var(--teal);
+      border: 1px solid var(--teal-border);
+      font-family: 'Syne', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(28px, 5vw, 44px);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    h1 span { color: var(--teal); }
+    .intro {
+      font-size: 19px;
+      line-height: 1.7;
+      color: var(--text-dim);
+      font-weight: 300;
+      border-left: 3px solid var(--teal);
+      padding-left: 20px;
+      margin-bottom: 8px;
+    }
+    .body {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+    h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+      margin: 52px 0 16px;
+      letter-spacing: -0.01em;
+    }
+    p { color: var(--text-dim); margin-bottom: 20px; }
+    strong { color: var(--text); font-weight: 500; }
+
+    .stat-row {
+      display: flex;
+      gap: 16px;
+      margin: 28px 0 36px;
+      flex-wrap: wrap;
+    }
+    .stat {
+      flex: 1;
+      min-width: 140px;
+      background: var(--bg2);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .stat-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--teal);
+      line-height: 1.1;
+    }
+    .stat-label {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+
+    .quote-card {
+      background: var(--bg2);
+      border-left: 3px solid var(--teal);
+      border-radius: 0 10px 10px 0;
+      padding: 18px 20px;
+      margin: 24px 0;
+    }
+    .quote-card p {
+      font-size: 15px;
+      color: var(--text-dim);
+      font-style: italic;
+      margin: 0 0 8px;
+      line-height: 1.65;
+    }
+    .quote-card span {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-family: 'Syne', sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    .callout {
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 32px 0;
+      display: flex;
+      gap: 14px;
+    }
+    .callout-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+    .callout-body { flex: 1; }
+    .callout-body strong {
+      display: block;
+      font-family: 'Syne', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      letter-spacing: 0.01em;
+    }
+    .callout-body p { margin: 0; font-size: 15px; line-height: 1.6; }
+    .callout.green { background: var(--green-dim); border: 1px solid rgba(74,222,128,0.2); }
+    .callout.green .callout-body strong { color: var(--green); }
+    .callout.teal { background: var(--teal-dim); border: 1px solid var(--teal-border); }
+    .callout.teal .callout-body strong { color: var(--teal); }
+
+    .principles {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin: 24px 0 28px;
+    }
+    .principles li {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--bg2);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 10px;
+      padding: 16px 18px;
+      font-size: 15px;
+      color: var(--text-dim);
+      line-height: 1.6;
+    }
+    .principles li .icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+    .principles li strong { display: block; color: var(--text); margin-bottom: 2px; font-size: 14px; }
+
+    hr {
+      border: none;
+      border-top: 1px solid rgba(255,255,255,0.07);
+      margin: 48px 0;
+    }
+
+    .cta-block {
+      background: var(--bg2);
+      border: 1px solid var(--teal-border);
+      border-radius: 16px;
+      padding: 36px 32px;
+      margin: 48px 0;
+      text-align: center;
+    }
+    .cta-block h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      color: #fff;
+      margin: 0 0 12px;
+      letter-spacing: -0.01em;
+    }
+    .cta-block p {
+      font-size: 15px;
+      color: var(--text-muted);
+      margin: 0 0 24px;
+      max-width: 440px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cta-btn {
+      display: inline-block;
+      background: var(--teal);
+      color: #0f1117;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 12px 28px;
+      border-radius: 9px;
+      text-decoration: none;
+      letter-spacing: 0.01em;
+      transition: opacity 0.2s;
+    }
+    .cta-btn:hover { opacity: 0.85; }
+    .cta-note { display: block; margin-top: 10px; font-size: 12px; color: var(--text-muted); }
+
+    footer {
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 32px 24px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+    footer a { color: var(--teal); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      nav { padding: 16px 20px; }
+      .hero { padding: 40px 20px 32px; }
+      .stat-row { gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="https://vintedscamshield.com" class="nav-logo">
+    <div class="nav-logo-icon">🛡️</div>
+    Vinted Scam Shield
+  </a>
+  <a href="https://chromewebstore.google.com/detail/vinted-scam-shield/ffdkgcechcedjmnbiljfffjoeikpfffk" class="nav-cta">Install Free →</a>
+</nav>
+
+<header class="hero">
+  <div class="tag">Our Story</div>
+  <h1>Why <span>Vinted Scam Shield</span> Exists</h1>
+  <p class="intro">
+    Vinted is one of the fastest-growing platforms in Europe. As it grows, so does the number of scams on it — and not everyone browsing Vinted is comfortable spotting the warning signs. This is the story of why this extension exists.
+  </p>
+</header>
+
+<div class="body">
+
+  <h2>Vinted is growing — fast</h2>
+  <p>Vinted has seen explosive growth in recent years, driven by people looking for value as the cost of living rises across Europe. The platform was recently valued at over $9 billion, and millions of new buyers and sellers join every year.</p>
+
+  <div class="stat-row">
+    <div class="stat">
+      <div class="stat-num">$9B+</div>
+      <div class="stat-label">Recent valuation</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">350K+</div>
+      <div class="stat-label">Weekly visitors to r/vinted alone</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">Millions</div>
+      <div class="stat-label">New users every year</div>
+    </div>
+  </div>
+
+  <p>Growth like that is great for the second-hand economy. But it also means more listings, more sellers, and — inevitably — more people trying to take advantage of buyers who don't know what to look for.</p>
+
+  <h2>Not everyone is tech-savvy</h2>
+  <p>Spend time in Vinted's buyer communities and a pattern becomes obvious. Experienced users develop instincts over time — checking for tag photos, reverse-searching images, reading reviews carefully. But these instincts take time, and often a bad experience, to build.</p>
+
+  <p>Many buyers simply don't have the time, the experience, or the technical know-how to run a Google Lens search on every listing photo, or to recognise the subtle signs of an AI-generated description. They just want to buy a jumper without getting a Shein item at triple the price.</p>
+
+  <div class="quote-card">
+    <p>"Here's what Vinted has become — Y2K and vintage have become synonymous with Shein, and with scams. You overconsume, then it gets resold for more."</p>
+    <span>— Buyer, sharing a side-by-side comparison of "vintage" listings and their original Shein product photos</span>
+  </div>
+
+  <h2>Existing protection comes after the fact</h2>
+  <p>Vinted does offer buyer protection, and it does cover situations like non-arrival or significantly misrepresented items. But protection that activates after a problem has already happened is a poor substitute for not having the problem in the first place.</p>
+
+  <p>Disputes take time. They require effort, evidence, and patience. And by the time a dispute is resolved — however it goes — the buyer has already spent money, waited for a delivery, and dealt with the frustration of being misled.</p>
+
+  <div class="callout teal">
+    <div class="callout-icon">🛡️</div>
+    <div class="callout-body">
+      <strong>Prevention is simply better than cure</strong>
+      <p>The best outcome isn't a successful dispute three weeks later. It's never having the problem at all — because something flagged the listing before you clicked "buy".</p>
+    </div>
+  </div>
+
+  <h2>The community already knows this</h2>
+  <p>This isn't a niche concern. Threads asking "what did getting scammed on Vinted teach you?" regularly get hundreds of upvotes and dozens of replies — buyers sharing hard-won lessons about tag photos, reverse image searches, and sellers who go quiet the moment you ask a real question.</p>
+
+  <div class="quote-card">
+    <p>"I'm not buying any more clothing without seeing a label pic. I also look a lot more carefully at photos now and if I have any doubts, do more research with Google Lens."</p>
+    <span>— r/vinted community member</span>
+  </div>
+
+  <p>The knowledge exists. It's just scattered across forum threads, learned the hard way, one bad purchase at a time. Vinted Scam Shield exists to bring some of that collective knowledge to the moment it actually matters — while you're looking at a listing, before you buy.</p>
+
+  <h2>Built by one person, transparently</h2>
+  <p>Vinted Scam Shield isn't built by a company with a marketing department or a roadmap driven by investors. It's built by one developer, in the open, with the source code publicly available on GitHub.</p>
+
+  <ul class="principles">
+    <li>
+      <span class="icon">🆓</span>
+      <div><strong>Free, rule-based detection forever</strong>The core protection — checking for AI-generated descriptions, new sellers, missing details — will always be free. No account, no signup.</div>
+    </li>
+    <li>
+      <span class="icon">🔓</span>
+      <div><strong>Open source</strong>The code is public. Anyone can inspect exactly what it does — and what it doesn't do.</div>
+    </li>
+    <li>
+      <span class="icon">🚫</span>
+      <div><strong>No data collection</strong>The extension doesn't track you, doesn't send your browsing data anywhere, and doesn't require an account.</div>
+    </li>
+    <li>
+      <span class="icon">💬</span>
+      <div><strong>Built with feedback</strong>Every warning has a thumbs up / thumbs down. Real feedback from real buyers shapes what gets flagged and how.</div>
+    </li>
+  </ul>
+
+  <div class="callout green">
+    <div class="callout-icon">✅</div>
+    <div class="callout-body">
+      <strong>A helpful guide, not a guarantee</strong>
+      <p>Vinted Scam Shield won't catch everything, and it never claims to. It's a second pair of eyes — one more check before you buy, built from the patterns experienced buyers have already learned the hard way.</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="cta-block">
+    <h3>Browse with a second pair of eyes</h3>
+    <p>Vinted Scam Shield runs automatically while you browse — flagging suspicious listings before you click buy. Free, open source, no account needed.</p>
+    <a href="https://chromewebstore.google.com/detail/vinted-scam-shield/ffdkgcechcedjmnbiljfffjoeikpfffk" class="cta-btn">Install Free on Chrome →</a>
+    <span class="cta-note">Free · No account needed · No data collected</span>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 <a href="https://vintedscamshield.com">Vinted Scam Shield</a> · Built for safer second-hand shopping</p>
+</footer>
+
+</body>
+</html>
